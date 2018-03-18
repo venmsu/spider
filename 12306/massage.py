@@ -25,9 +25,9 @@ def myAlign(string, length):
 
 # 发送邮件通知
 def send_Mail(data, fromstation, tostation):
-    msg_from = "784611320@qq.com"
-    passwd = "abaerycyyajybcgj"
-    msg_to = receiveMail
+    msg_from = "发邮件的邮箱"
+    passwd = "发件人的邮箱密码代号"  # 这个在开通QQ邮箱SMTP功能时可以获取
+    msg_to = receiveMail  # 收件人
 
     subject = "抢票消息通知"
     content= "您好，您抢的{}从{}到{}的车票已经下单，请尽快到12306官网“{}”账号支付！".format(data, fromstation,tostation, coUsername)
